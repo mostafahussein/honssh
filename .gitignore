@@ -2,6 +2,7 @@ sessions/
 logs/
 users.cfg
 honssh.cfg
+honeyenv
 id_rsa
 id_rsa.pub
 id_dsa

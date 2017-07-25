@@ -1,0 +1,10 @@
+Twisted
+MySQL-python
+python-geoip
+GeoIP
+watchdog
+pyasn1
+cryptography
+service_identity
+docker
+docker-py
