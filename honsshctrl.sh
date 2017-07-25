@@ -92,7 +92,7 @@ function start_honssh()
     then
         logger -p info "$Script[$$]: Starting honssh in background..."
         echo "$Script[$$]: Starting honssh in background..."
-        twistd -y "$honssh_tac" -l "$honssh_log" --pidfile "$honssh_pid"
+        honeyenv/bin/twistd -y "$honssh_tac" -l "$honssh_log" --pidfile "$honssh_pid"
         tail_log "$honssh_log"
     else
         logger -p err "$Script[$$]: ERROR: There appears to be a pid file already, HonSSH might be running."
