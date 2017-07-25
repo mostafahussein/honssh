@@ -138,13 +138,13 @@ function pki_check()
     then
         logger -p warn "$Script[$$]: WARNING: Unable to find $id_rsa, generating it now..."
         echo "$Script[$$]: WARNING: Unable to find $id_rsa, generating it now..."
-        ckeygen --no-passphrase -t rsa -f "$id_rsa"
+        honeyenv/bin/ckeygen --no-passphrase -t rsa -f "$id_rsa"
     fi
     if [ ! -e "$id_dsa" ]
     then
         logger -p warn "$Script[$$]: WARNING: Unable to find $id_dsa, generating it now..."
         echo "$Script[$$]: WARNING: Unable to find $id_dsa, generating it now..."
-        ckeygen --no-passphrase -t dsa -f "$id_dsa"
+        honeyenv/bin/ckeygen --no-passphrase -t dsa -f "$id_dsa"
     fi
 }
 
