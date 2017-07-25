@@ -36,6 +36,7 @@ from twisted.conch.ssh.keys import Key
 from twisted.python import log
 from twisted.application import internet, service
 
+sys.path.append(os.getcwd())
 from honssh.config import Config
 from honssh import server, interact
 
